@@ -73,10 +73,7 @@ void updateFigure(int wrongGuesses) {
 void updateGuess(char *guessedWord, char *word, int wordlength) {
     printf("\n\t\t");
     for(int i=0; i<wordlength; i++) {
-        if(guessedWord[i] != word[i]) 
-            printf("_ ");
-        else 
-            printf("%c ", guessedWord[i]);
+        printf("%c ", guessedWord[i]);
     }
 }
 
